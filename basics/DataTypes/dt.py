@@ -22,8 +22,16 @@ print(range_list)
 
 
 # Tuples are similar to lists but they are immutable meaning we cant change them
-
+my_tuple = ('a','b','c','d')
 
 # Then theres dictionary, where we define data in key value pairs
+my_dict = {
+   'name':'raza',
+   'age':21,
+   'status':'studying'
+}
 
+print(my_dict['name'])
+
+# Also set, where there is no duplicate data, each data element is unique, and it has set like operations like in math
 
