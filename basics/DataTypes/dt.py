@@ -34,4 +34,7 @@ my_dict = {
 print(my_dict['name'])
 
 # Also set, where there is no duplicate data, each data element is unique, and it has set like operations like in math
+my_set = {1,2,3,4,5,5,5}
 
+print(my_set)
+# outputs only unique values, 5 is only printed once
