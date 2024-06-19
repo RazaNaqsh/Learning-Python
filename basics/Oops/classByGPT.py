@@ -16,6 +16,9 @@ class Car:
     
     def increment_odometer(self,miles):
         self.odometer_reading += miles
+        
+    def fill_gas_tank(self):
+        print("Filling the gas tank")
     
     
 class ElectricCar(Car):
@@ -29,17 +32,22 @@ class ElectricCar(Car):
     def get_description(self):
         return f'{self.year} {self.make} {self.model} (Electric)'
     
+    def fill_gas_tank(self):
+        print("Electric car dont have gas tanks")
+    
 
 
-# car1 = Car('Toyota','Corolla',2024,40)
+car1 = Car('Toyota','Corolla',2024,40)
 
 # car1.update_odometer(50)
 # car1.read_odometer()
 # car1.increment_odometer(20)
-# print(car1.get_description())
+print(car1.get_description())
+car1.fill_gas_tank()
 # car1.read_odometer()
 
 ev1 = ElectricCar('Tesla','Model-5',2024,80,100)
 
 print(ev1.get_description())
 ev1.describe_battery()
+ev1.fill_gas_tank()
