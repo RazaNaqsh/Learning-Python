@@ -21,6 +21,17 @@ class Car:
     def fill_gas_tank(self):
         print("Filling the gas tank")
 
+    # Getter for odometer_reading
+    def get_odometer_reading(self):
+        return self.__odometer_reading
+
+    # Setter for odometer_reading
+    def set_odometer_reading(self, mileage):
+        if mileage >= self.__odometer_reading:
+            self.__odometer_reading = mileage
+        else:
+            print("You cant roll back an odometer")
+
 
 class ElectricCar(Car):
     def __init__(self, make, model, year, odometer_reading=0, battery_size=75):
@@ -44,6 +55,8 @@ car1 = Car("Toyota", "Corolla", 2024, 40)
 # car1.increment_odometer(20)
 print(car1.get_description())
 car1.fill_gas_tank()
+car1.set_odometer_reading(90)
+print(car1.get_odometer_reading())
 # car1.read_odometer()
 
 ev1 = ElectricCar("Tesla", "Model-5", 2024, 80, 100)
