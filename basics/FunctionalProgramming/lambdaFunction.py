@@ -30,13 +30,9 @@ from functools import reduce
 a = [(0, 2), (4, 3), (10, -1), (9, 9)]
 
 # If we simply sort a
-
 a.sort()  # sorts on the basis of first key
 print(a)
 
-
 # Sorting on the basis of 2nd key
-
 a.sort(key=lambda x: x[1])
-
 print(a)
