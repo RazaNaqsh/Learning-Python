@@ -1,3 +1,5 @@
+# Decorators are wrappers that make the functions super powered
+# with extra functionalities
 # Decorator
 def my_decorator(func):
     def wrap_func():
