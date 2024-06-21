@@ -3,6 +3,7 @@ while True:
         age = int(input("What is your age?"))
         10 / age
         print(f"So Your age is {age} ssouuukaa")
+        raise ValueError("Heyy cut it outt chhotto matte")  # purposely raise errors
     except ValueError:
         print("Please enter a number")
     except ZeroDivisionError:
