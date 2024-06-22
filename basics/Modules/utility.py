@@ -1,3 +1,6 @@
+print(__name__)
+
+
 def test():
     print("testing...")
 
