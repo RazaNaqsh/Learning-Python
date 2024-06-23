@@ -14,4 +14,16 @@ print(my_file.read())
 
 # Thus the output we get is that first print works 2nd dont work then third works
 
-print(my_file.readline())
+print(my_file.readline())  # reads a single line
+
+
+my_file.close()
+
+# !The above format for using file io is not recommended since we have to open and close the file⁡
+
+
+# ~ The recommended way is to
+
+print("------------------------------")
+with open("test.txt") as my_file2:
+    print(my_file2.readlines())
