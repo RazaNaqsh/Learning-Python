@@ -10,3 +10,16 @@ with open("test.txt", mode="r+") as my_file:
 with open("test.txt", mode="w") as my_file:
     text = my_file.write("UwU")
     print(text)
+
+
+# ~ A common way to work with files is to use try catch block
+
+try:
+    with open("test.txt", mode="r") as file1:
+        print(file1.read())
+except FileNotFoundError as err:
+    print("file does not exist")
+    raise err
+except IOError as err:
+    print("IO error")
+    raise err
