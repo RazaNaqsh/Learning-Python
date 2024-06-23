@@ -1,4 +1,4 @@
-with open("test.txt", mode="r+") as my_file:
+with open("test.txt", mode="r+", encoding="utf-8") as my_file:
     text = my_file.write("UwU")
     print(text)
 
@@ -7,7 +7,7 @@ with open("test.txt", mode="r+") as my_file:
 # ^ If we simply wanna overwrite the file from scratch, use mode w write
 # ^ It also creates a new file if, the mentioned file does not exists
 
-with open("test.txt", mode="w") as my_file:
+with open("test.txt", mode="w", encoding="utf-8") as my_file:
     text = my_file.write("UwU")
     print(text)
 
@@ -15,7 +15,7 @@ with open("test.txt", mode="w") as my_file:
 # ~ A common way to work with files is to use try catch block
 
 try:
-    with open("test.txt", mode="r") as file1:
+    with open("test.txt", mode="r", encoding="utf-8") as file1:
         print(file1.read())
 except FileNotFoundError as err:
     print("file does not exist")
