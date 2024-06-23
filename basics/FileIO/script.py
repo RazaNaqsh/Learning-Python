@@ -13,3 +13,5 @@ my_file.seek(0)  # Now we are at 0 means first
 print(my_file.read())
 
 # Thus the output we get is that first print works 2nd dont work then third works
+
+print(my_file.readline())
