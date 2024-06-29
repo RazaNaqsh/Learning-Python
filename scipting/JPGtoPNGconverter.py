@@ -17,7 +17,7 @@ output_folder = sys.argv[2]
 
 # check is new/ exists, if not create
 # if os.path.exists(output_folder):
-#     shutil.rmtree(output_folder)
+#     shutil.rmtree(output_folder)  #rmtree deletes an unempty dir
 
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)  # creates a new folder
